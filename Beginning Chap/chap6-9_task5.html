@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task5_C6-9</title>
+</head>
+<body>
+  
+ 
+<script>
+  var s1 = prompt('Write name of 1st subject')
+  var s2 = prompt('Write name of 2nd subject')
+  var s3 = prompt('Write name of 3rd subject')
+  var TMarks = 100
+  var AllTmarks = TMarks*3
+  var s1Marks = Number(prompt(`Write marks obtained in ${s1}`))
+  var s2Marks = Number(prompt(`Write marks obtained in ${s2}`))
+  var s3Marks = Number(prompt(`Write marks obtained in ${s3}`))
+  var TobtMarks = s1Marks+s2Marks+s3Marks
+  var s1Perc = (s1Marks/TMarks)*100
+  var s2Perc = (s2Marks/TMarks)*100
+  var s3Perc = (s3Marks/TMarks)*100
+
+  document.write(`<table><tr>
+    <th>Subject</th><th>Total Marks</th><th>Obtained Marks</th><th>Percentage</th>
+  </tr>
+  <tr>
+    <td>${s1}</td><td>${TMarks}</td><td>${s1Marks}</td><td>${s1Perc}%</td>
+  </tr>
+  <tr>
+    <td>${s2}</td><td>${TMarks}</td><td>${s2Marks}</td><td>${s2Perc}%</td>
+  </tr>
+  <tr>
+    <td>${s3}</td><td>${TMarks}</td><td>${s3Marks}</td><td>${s3Perc}%</td>
+  </tr>
+  <tr>
+    <th></th><th>${AllTmarks}</th><th>${TobtMarks}</th><th>${(TobtMarks/AllTmarks)*100}%</th>
+  </tr>
+  </table>`)
+
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6_C9-11</title>
+</head>
+<body>
+    
+    <script>
+        var sub1 = Number(prompt('Enter marks obtainer of 1st subject:'))
+        var sub2 = Number(prompt('Enter marks obtained of 2nd subject:'))
+        var sub3 = Number(prompt('Enter marks of obtained 3rd subject:'))
+        var totalMark = Number(prompt('Enter Total marks:'))
+        var Omark = sub1 + sub2+ sub3
+        var Per = (Omark/totalMark*100)
+        var grade;
+        var remarks;
+        if(Per>=80){
+            remarks = "Excelent"
+            grade = "A-one"
+        } else if (Per>=70){
+            remarks = "Good"
+            grade = "A"
+            
+        }else if (Per>=60){
+            remarks = "You need to improve"
+            grade = "B"
+            
+        }else if (Per<60){
+            remarks = "Fail"
+            grade = "Sorry"
+            
+        }
+
+
+        document.write("<h1>Marks Sheet</h1>")
+        document.write('<br>Total Marks:'+totalMark)
+        document.write('<br>Marks Obtained:'+Omark)
+        document.write('<br>Percentage:'+Per+"%")
+        document.write('<br>Grade:'+grade)
+        document.write('<br>Remarks:'+remarks)
+             
+    </script>
+</body>
+</html>

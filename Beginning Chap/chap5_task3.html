@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3_C5</title>
+</head>
+<body>
+    <h3 id="s1"></h3>
+    <h3 id="s2"></h3>
+    <h3 id="s3"></h3>
+    <h3 id="s4"></h3>
+    <h3 id="s5"></h3>
+    <h3 id="s6"></h3>
+    <script>
+        var variable; 
+        document.getElementById("s1").innerHTML = "Value after variable declaration is "+variable;
+        variable = 5;
+        document.getElementById("s2").innerHTML = "Intial value: "+variable;
+        variable = variable+1;
+        document.getElementById("s3").innerHTML = "Value after increment is "+variable;
+        variable = variable+7;
+        document.getElementById("s4").innerHTML = "Value after addition is "+variable;
+        variable = variable-1;
+        document.getElementById("s5").innerHTML = "Value after decrement is "+variable;
+        variable = variable%3;
+        document.getElementById("s6").innerHTML = "The remainder is "+variable;
+        
+         </script>
+     
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task10_C9-11</title>
+</head>
+<body>
+    
+    <script>
+        var no1st = Number(prompt("1st No:"))
+        var no2nd = Number(prompt("2nd No:"))
+        var operator = prompt("Operator:")
+        var rslt;
+        if(operator=="+"){
+            rslt = no1st+no2nd
+        } else if (operator == "-"){
+            rslt = no1st-no2nd
+        }else if (operator == "*"){
+            rslt = no1st*no2nd
+        }else if (operator == "%"){
+            rslt = no1st%no2nd
+        }else if (operator == "/"){
+            rslt = no1st/no2nd
+        }
+        document.write("<h1>Calculator</h1>")
+        document.write(`${no1st} ${operator} ${no2nd} = ${rslt}`)
+        
+    </script>
+</body>
+</html>

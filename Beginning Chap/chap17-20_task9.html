@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task9_C17-20</title>
+</head>
+<body>
+
+    <script>
+    var lar = [24, 53, 78, 91, 12]
+    var sm;
+    document.write("Array Items: "+ lar)
+    for (let i = 0; i < lar.length; i++) {
+        sm = lar[i]
+        for (let i = 0; i < lar.length; i++) {
+            if(sm>lar[i]){
+                sm=lar[i]
+               
+            }
+            
+        }
+        
+    }
+    document.write('<br>The smallest no is '+sm)
+    </script>
+</body>
+</html>

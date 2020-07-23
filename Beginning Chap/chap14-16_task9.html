@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task9_C14-16</title>
+</head>
+<body>
+    <script>
+        var colr = ['white','blue','green']
+        alert(colr)
+        colr.unshift(prompt('Write a color to add in beginning'))
+        alert(colr)
+        colr.push(prompt('Write a color to add in end'))
+        alert(colr)
+        colr.unshift(prompt('Write a color to add in beginning'))
+        alert(colr)
+        colr.unshift(prompt('Again write a color to add in beginning'))
+        alert(colr)
+        colr.shift()
+        alert("1st color deleted\n"+colr)
+        colr.pop()
+        alert("Last color deleted\n"+colr)
+        var ind = prompt(`In which index you want to add lenght 0 - ${colr.length - 1}`)
+        colr[ind] = prompt('Which color?')
+        alert(colr)
+        ind = Number(prompt(`In which index you want to delete lenght 0 - ${colr.length - 1}`))
+        ind1= Number(prompt(`How many color you want to remove from desired index`))
+        colr.splice(ind,ind1)
+        alert(colr)
+    </script>
+</body>
+</html>

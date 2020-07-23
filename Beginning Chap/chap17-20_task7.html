@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7_C17-20</title>
+</head>
+<body>
+
+    <script>
+    var A = ["cake", "apple pie", "cookie", "chips", "patties"]
+    var inp = prompt('Welcome to our Bakery what do you want to order?').toLowerCase()
+    var scre; 
+    for (let i = 0; i < A.length; i++) {
+        if(inp==A[i])
+        {
+            document.write(`${inp} is avliable at index ${i} in our bakery.`)
+            scre = 1;
+        }
+    }
+    if (scre!=1)
+    {
+        document.write(`We are sorry. ${inp} is not avliable at our bakery.`)
+    }
+    </script>
+</body>
+</html>
